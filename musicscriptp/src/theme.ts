@@ -8,6 +8,7 @@ export const theme: Theme = {
   },
   colors: {
     textColor: '#fff',
+    colorBlack: '#000',
     textHoverColor: 'gold',
     background: '#fff',
     backgroundColorNav: 'pink',
