@@ -1,6 +1,53 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
 }
+.pizmo {
+  height: 40%;
+  width: 40%;
+  border: 3px solid pink;
+  border-radius: 50%;
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  animation: spin 5s linear infinite;
+
+
+}
+.topWrapper {
+  display: flex;
+  flex-direction: row;
+  height: 50%;
+}
+.leftBox {
+  height: 100%;
+  width: 50%;
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 17%, rgba(148,187,233,1) 100%);;
+}
+
+.rightBox {
+  height: calc(100% - 10px);
+  width: 50%;
+  background-color: greenyellow;
+  border: 5px dotted #fff;
+  border-bottom: 5px dotted #fff;
+
+}
+
+.firstBottomBox {
+  height: 50%;
+  width: 100%;
+  background: rgb(34,193,195);
+  background: linear-gradient(0deg, rgba(34,193,195,1) 30%, rgba(253,187,45,1) 100%);
+}
+
+
 
 .App-logo {
   height: 40vmin;
@@ -28,11 +75,13 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@keyframes spin {
+
+  0% { transform: rotate(0deg); }
+
+  100% { transform: rotate(360deg); }
+
+
   }
-  to {
-    transform: rotate(360deg);
-  }
-}
+  
+
